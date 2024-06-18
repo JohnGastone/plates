@@ -3,6 +3,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:plates/pages/platePage.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -140,42 +141,54 @@ class _HomepageState extends State<Homepage> {
                 padding: const EdgeInsets.only(left: 10, right: 10),
                 child: Row(
                   children: [
-                    Container(
-                      height: 230,
-                      width: 170,
-                      decoration: BoxDecoration(color: Color(0xFF283035)),
-                      child: Column(
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Align(
-                              alignment: Alignment.topRight,
-                              child: Icon(
-                                CupertinoIcons.heart,
-                                color: Color(0xFFC72931),
+                    InkWell(
+                      child: Container(
+                        height: 230,
+                        width: 170,
+                        decoration: BoxDecoration(color: Color(0xFF283035)),
+                        child: Column(
+                          children: [
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Align(
+                                alignment: Alignment.topRight,
+                                child: Icon(
+                                  CupertinoIcons.heart,
+                                  color: Color(0xFFC72931),
+                                ),
                               ),
                             ),
-                          ),
-                          Center(
-                            child: Image.asset(
-                              "./assets/salad.png",
-                              height: 120,
-                              width: 100,
+                            Center(
+                              child: Image.asset(
+                                "./assets/salad.png",
+                                height: 120,
+                                width: 100,
+                              ),
                             ),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: Text(
-                              "COMBO SALAD WITH GINGER",
-                              style: GoogleFonts.angkor(
-                                  fontSize: 12,
-                                  fontWeight: FontWeight.bold,
-                                  color: Colors.grey),
-                              textAlign: TextAlign.center,
-                            ),
-                          )
-                        ],
+                            Padding(
+                              padding: const EdgeInsets.all(8.0),
+                              child: Text(
+                                "COMBO SALAD WITH GINGER",
+                                style: GoogleFonts.angkor(
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.bold,
+                                    color: Colors.grey),
+                                textAlign: TextAlign.center,
+                              ),
+                            )
+                          ],
+                        ),
                       ),
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          CupertinoPageRoute(
+                            builder: (context) {
+                              return PlatePage();
+                            },
+                          ),
+                        );
+                      },
                     ),
                     Container(
                       height: 230,
@@ -378,6 +391,9 @@ class _HomepageState extends State<Homepage> {
                     )
                   ],
                 ),
+              ),
+              SizedBox(
+                height: 50,
               )
             ],
           ),
