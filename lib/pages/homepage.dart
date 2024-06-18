@@ -29,8 +29,8 @@ class _HomepageState extends State<Homepage> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     SizedBox(
-                      height: 50,
-                      width: 50,
+                      height: 45,
+                      width: 45,
                       child: ClipOval(
                         child: Image.asset(
                           "./assets/p2.png",
@@ -51,18 +51,18 @@ class _HomepageState extends State<Homepage> {
                           style: GoogleFonts.roboto(
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
-                              color: Colors.white),
+                              color: Colors.grey),
                         ),
                         Text(
-                          "All the most delicious things for you",
+                          "All the most delicious meals for you",
                           style: GoogleFonts.roboto(
-                              fontSize: 14, color: Colors.white),
+                              fontSize: 14, color: Colors.grey),
                         ),
                       ],
                     ),
                     Container(
-                      height: 50,
-                      width: 50,
+                      height: 45,
+                      width: 45,
                       decoration: BoxDecoration(
                           color: Color(0xFF354249),
                           borderRadius: BorderRadius.circular(15)),
@@ -75,7 +75,7 @@ class _HomepageState extends State<Homepage> {
                 ),
               ),
               Container(
-                height: 10,
+                height: 5,
                 width: double.maxFinite,
                 decoration: BoxDecoration(color: Color(0xFFC72931)),
               )
@@ -102,7 +102,7 @@ class _HomepageState extends State<Homepage> {
                         child: Text(
                           "NEW",
                           style: GoogleFonts.bayon(
-                              color: Colors.white, fontSize: 18),
+                              color: Colors.grey, fontSize: 18),
                         ),
                       ),
                     ),
@@ -130,7 +130,7 @@ class _HomepageState extends State<Homepage> {
                         child: Text(
                           "POPULAR",
                           style: GoogleFonts.bayon(
-                              color: Colors.white, fontSize: 18),
+                              color: Colors.grey, fontSize: 18),
                         ),
                       ),
                     )
