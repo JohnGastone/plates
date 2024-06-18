@@ -199,6 +199,48 @@ class _PlatePageState extends State<PlatePage> {
                             ],
                           )
                         ],
+                      ),
+                      SizedBox(
+                        height: 8,
+                      ),
+                      Row(
+                        children: [
+                          Row(
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Container(
+                                  height: 30,
+                                  width: 30,
+                                  decoration:
+                                      BoxDecoration(color: Color(0xFF354249)),
+                                  child: Icon(
+                                    CupertinoIcons.minus,
+                                    color: Color(0xFFC72931),
+                                  ),
+                                ),
+                              ),
+                              Text("1",
+                                  style: GoogleFonts.roboto(
+                                    color: Colors.white,
+                                    fontSize: 20,
+                                  )),
+                              Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Container(
+                                  height: 30,
+                                  width: 30,
+                                  decoration:
+                                      BoxDecoration(color: Color(0xFF354249)),
+                                  child: Icon(
+                                    CupertinoIcons.add,
+                                    color: Color(0xFFC72931),
+                                  ),
+                                ),
+                              )
+                            ],
+                          )
+                        ],
                       )
                     ],
                   ),
