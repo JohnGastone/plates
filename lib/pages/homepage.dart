@@ -203,7 +203,7 @@ class _HomepageState extends State<Homepage> {
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Text(
-                              "COMBO SALAD WITH GINGER",
+                              "CHICKEN BIRYAN WITH SPICES",
                               style: GoogleFonts.angkor(
                                   fontSize: 12,
                                   fontWeight: FontWeight.bold,
@@ -247,7 +247,7 @@ class _HomepageState extends State<Homepage> {
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Text(
-                              "COMBO SALAD WITH GINGER",
+                              "CHICKEN BIRYAN WITH SPICES",
                               style: GoogleFonts.angkor(
                                   fontSize: 12,
                                   fontWeight: FontWeight.bold,
