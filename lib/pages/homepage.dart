@@ -155,6 +155,13 @@ class _HomepageState extends State<Homepage> {
                                 color: Color(0xFFC72931),
                               ),
                             ),
+                          ),
+                          Center(
+                            child: Image.asset(
+                              "./assets/salad.png",
+                              height: 100,
+                              width: 100,
+                            ),
                           )
                         ],
                       ),
