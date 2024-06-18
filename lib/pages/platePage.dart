@@ -61,13 +61,16 @@ class _PlatePageState extends State<PlatePage> {
                 style:
                     GoogleFonts.angkor(color: Color(0xFF283035), fontSize: 80),
               ),
-              Center(
-                child: SizedBox(
-                  height: 300,
-                  width: 300,
-                  child: Image.asset(
-                    "./assets/bir.png",
-                    fit: BoxFit.cover,
+              Positioned(
+                top: 30,
+                child: Center(
+                  child: SizedBox(
+                    height: 300,
+                    width: 300,
+                    child: Image.asset(
+                      "./assets/bir.png",
+                      fit: BoxFit.cover,
+                    ),
                   ),
                 ),
               ),
