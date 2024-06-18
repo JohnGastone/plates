@@ -140,6 +140,60 @@ class _PlatePageState extends State<PlatePage> {
                         height: 1,
                         width: double.maxFinite,
                         decoration: BoxDecoration(color: Color(0xFFC72931)),
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Text(
+                        "Sweet is the perfect end to any meal, the perfect addition to end of the day story tipped with pleasure.",
+                        style: GoogleFonts.roboto(
+                            fontSize: 22,
+                            fontWeight: FontWeight.w400,
+                            color: Colors.white),
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      Row(
+                        children: [
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              // Generate a list of 5 Icon widgets
+                              ...List.generate(
+                                5,
+                                (index) => Icon(
+                                  CupertinoIcons.star_fill,
+                                  color: Colors.amber,
+                                ),
+                              ),
+                              SizedBox(
+                                width: 5,
+                              ),
+                              Text(
+                                "5.0",
+                                style: GoogleFonts.roboto(
+                                    color: Colors.white,
+                                    fontSize: 20,
+                                    fontWeight: FontWeight.bold),
+                              )
+                            ],
+                          ),
+                          Row(
+                            children: [
+                              Text(
+                                "\$",
+                                style: GoogleFonts.roboto(
+                                    fontSize: 10, fontWeight: FontWeight.bold),
+                              ),
+                              Text(
+                                "12",
+                                style: GoogleFonts.roboto(
+                                    fontSize: 50, fontWeight: FontWeight.bold),
+                              )
+                            ],
+                          )
+                        ],
                       )
                     ],
                   ),
