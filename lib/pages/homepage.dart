@@ -159,8 +159,19 @@ class _HomepageState extends State<Homepage> {
                           Center(
                             child: Image.asset(
                               "./assets/salad.png",
-                              height: 100,
+                              height: 120,
                               width: 100,
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text(
+                              "COMBO SALAD WITH GINGER",
+                              style: GoogleFonts.angkor(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.grey),
+                              textAlign: TextAlign.center,
                             ),
                           )
                         ],
@@ -170,6 +181,38 @@ class _HomepageState extends State<Homepage> {
                       height: 230,
                       width: 170,
                       decoration: BoxDecoration(color: Color(0xFF303A40)),
+                      child: Column(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Align(
+                              alignment: Alignment.topRight,
+                              child: Icon(
+                                CupertinoIcons.heart,
+                                color: Color(0xFFC72931),
+                              ),
+                            ),
+                          ),
+                          Center(
+                            child: Image.asset(
+                              "./assets/bir.png",
+                              height: 120,
+                              width: 100,
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text(
+                              "COMBO SALAD WITH GINGER",
+                              style: GoogleFonts.angkor(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.grey),
+                              textAlign: TextAlign.center,
+                            ),
+                          )
+                        ],
+                      ),
                     )
                   ],
                 ),
@@ -182,11 +225,75 @@ class _HomepageState extends State<Homepage> {
                       height: 230,
                       width: 170,
                       decoration: BoxDecoration(color: Color(0xFF303A40)),
+                      child: Column(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Align(
+                              alignment: Alignment.topRight,
+                              child: Icon(
+                                CupertinoIcons.heart,
+                                color: Color(0xFFC72931),
+                              ),
+                            ),
+                          ),
+                          Center(
+                            child: Image.asset(
+                              "./assets/bir.png",
+                              height: 120,
+                              width: 100,
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text(
+                              "COMBO SALAD WITH GINGER",
+                              style: GoogleFonts.angkor(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.grey),
+                              textAlign: TextAlign.center,
+                            ),
+                          )
+                        ],
+                      ),
                     ),
                     Container(
                       height: 230,
                       width: 170,
                       decoration: BoxDecoration(color: Color(0xFF283035)),
+                      child: Column(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Align(
+                              alignment: Alignment.topRight,
+                              child: Icon(
+                                CupertinoIcons.heart,
+                                color: Color(0xFFC72931),
+                              ),
+                            ),
+                          ),
+                          Center(
+                            child: Image.asset(
+                              "./assets/salad.png",
+                              height: 120,
+                              width: 100,
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: Text(
+                              "COMBO SALAD WITH GINGER",
+                              style: GoogleFonts.angkor(
+                                  fontSize: 12,
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.grey),
+                              textAlign: TextAlign.center,
+                            ),
+                          )
+                        ],
+                      ),
                     )
                   ],
                 ),
