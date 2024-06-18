@@ -204,6 +204,7 @@ class _PlatePageState extends State<PlatePage> {
                         height: 8,
                       ),
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Row(
                             children: [
@@ -239,6 +240,17 @@ class _PlatePageState extends State<PlatePage> {
                                 ),
                               )
                             ],
+                          ),
+                          Container(
+                            height: 60,
+                            width: 150,
+                            decoration: BoxDecoration(
+                                color: Color(0xFF354249),
+                                borderRadius: BorderRadius.circular(15)),
+                            child: Icon(
+                              CupertinoIcons.cart,
+                              color: Color(0xFFC72931),
+                            ),
                           )
                         ],
                       )
