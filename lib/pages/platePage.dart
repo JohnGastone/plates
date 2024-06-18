@@ -155,6 +155,7 @@ class _PlatePageState extends State<PlatePage> {
                         height: 10,
                       ),
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -184,12 +185,16 @@ class _PlatePageState extends State<PlatePage> {
                               Text(
                                 "\$",
                                 style: GoogleFonts.roboto(
-                                    fontSize: 10, fontWeight: FontWeight.bold),
+                                    color: Colors.white,
+                                    fontSize: 30,
+                                    fontWeight: FontWeight.bold),
                               ),
                               Text(
                                 "12",
                                 style: GoogleFonts.roboto(
-                                    fontSize: 50, fontWeight: FontWeight.bold),
+                                    color: Colors.white,
+                                    fontSize: 50,
+                                    fontWeight: FontWeight.bold),
                               )
                             ],
                           )
