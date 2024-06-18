@@ -12,6 +12,22 @@ class PlatePage extends StatefulWidget {
 }
 
 class _PlatePageState extends State<PlatePage> {
+  int _counter = 1;
+
+  void _plateIncrement() {
+    setState((() {
+      _counter++;
+    }));
+  }
+
+  void _plateDecrement() {
+    setState(() {
+      if (_counter > 1) {
+        _counter--;
+      }
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -215,13 +231,16 @@ class _PlatePageState extends State<PlatePage> {
                                   width: 30,
                                   decoration:
                                       BoxDecoration(color: Color(0xFF354249)),
-                                  child: Icon(
-                                    CupertinoIcons.minus,
-                                    color: Color(0xFFC72931),
+                                  child: InkWell(
+                                    onTap: _plateDecrement,
+                                    child: Icon(
+                                      CupertinoIcons.minus,
+                                      color: Color(0xFFC72931),
+                                    ),
                                   ),
                                 ),
                               ),
-                              Text("1",
+                              Text("$_counter",
                                   style: GoogleFonts.roboto(
                                     color: Colors.white,
                                     fontSize: 20,
@@ -233,12 +252,15 @@ class _PlatePageState extends State<PlatePage> {
                                   width: 30,
                                   decoration:
                                       BoxDecoration(color: Color(0xFF354249)),
-                                  child: Icon(
-                                    CupertinoIcons.add,
-                                    color: Color(0xFFC72931),
+                                  child: InkWell(
+                                    onTap: _plateIncrement,
+                                    child: Icon(
+                                      CupertinoIcons.add,
+                                      color: Color(0xFFC72931),
+                                    ),
                                   ),
                                 ),
-                              )
+                              ),
                             ],
                           ),
                           Container(
